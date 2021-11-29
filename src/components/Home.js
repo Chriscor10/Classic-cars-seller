@@ -11,7 +11,7 @@ function Home() {
                     <p class="lead my-4">
                     29,975 Classic Cars and Trucks for Sale Today
                     </p>
-                    <button class="btn btn-primary btn-md">Contact</button>
+                    <button class="btn btn-secondary btn-md">Contact</button>
                 </div>
                 <img class="img-fluid w-60 d-none d-sm-block" src='https://www.zilliondesigns.com/images/portfolio/auto-dealer/auto-dealer-02.png'></img>
             </div>
@@ -32,7 +32,7 @@ function Home() {
             />
 
             <button 
-            class="btn btn-primary btn-lg" 
+            class="btn btn-secondary btn-lg" 
             type="button"
             >
             Button

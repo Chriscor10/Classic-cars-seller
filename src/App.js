@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route} from  "react-router-dom";
 import Dealers from './components/Dealers';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Inventory from './components/Inventory';
 import Navbar from './components/Navbar';
@@ -21,6 +22,7 @@ function App() {
          <Dealers/>
        </Route>
      </Switch>
+     <Footer/>
     </div>
   );
 }
