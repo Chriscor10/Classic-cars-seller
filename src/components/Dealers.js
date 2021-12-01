@@ -10,8 +10,8 @@ function Dealers() {
         <div>
           {inventory.map(inventory => {
          return (
-         <div>
-          <Card style={{ width: '18rem' }}>
+         <div className="container">
+        <Card  style={{ width: '18rem' }}>
          <Card.Img variant="top" src={inventory.logoimg} />
          <Card.Body>
           <Card.Title>{inventory.username}</Card.Title>

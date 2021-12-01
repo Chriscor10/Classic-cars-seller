@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 function Navbar() {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="/">Classic Cars Miami</a>
         <button 
             class="navbar-toggler" 

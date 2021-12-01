@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
-import { Button, Card } from 'react-bootstrap';
+import { Card, Button} from 'react-bootstrap';
 import { InventoryContext } from './InventoryContext';
+import './Inventory.css';
 
 
 function Inventory() {
@@ -12,17 +13,18 @@ function Inventory() {
       <div> 
         {inventory.map((inventory) => {
          return (
-           <div>
+           <div className="inventory">
              {inventory.Car.map((Car => {
                return(
-                 <div>
-                   <Card style={{ width: '18rem' }}>
-         <Card.Img variant="top" src={Car.image} />
+                 <div className="container">
+       <Card className="card border-dark mb-3"  style={{ width: '18rem', height: '25rem'}}>
+       <img className="image" variant="top" src={Car.image} />
          <Card.Body>
-          <Card.Title></Card.Title>
+          <Card.Title> {Car.brand}</Card.Title>
            <Card.Text>{Car.model} {Car.year}</Card.Text>
            <Card.Text>Miles: {Car.Mileage}</Card.Text>
            <Card.Text>{Car.Price}</Card.Text>
+           <Button variant="dark">Details</Button>
          </Card.Body>
        </Card>
                  </div>

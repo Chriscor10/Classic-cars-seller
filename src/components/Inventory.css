@@ -1,0 +1,15 @@
+.inventory {
+    display: grid;
+    grid-Template-Columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+
+.image{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    max-height: 200px;
+    padding: 0.3rem;
+}
