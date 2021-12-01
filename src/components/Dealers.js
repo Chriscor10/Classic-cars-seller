@@ -5,7 +5,7 @@ import { InventoryContext } from './InventoryContext';
 
 function Dealers() {
   const {inventory, setInventory} = useContext(InventoryContext);
-  console.log(inventory)
+ 
     return (
         <div>
           {inventory.map(inventory => {

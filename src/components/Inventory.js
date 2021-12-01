@@ -5,26 +5,33 @@ import { InventoryContext } from './InventoryContext';
 
 function Inventory() {
   const {inventory, setInventory} = useContext(InventoryContext);
-  
 
+    
     
     return (
-    
       <div> 
-        {inventory.map(inventory => {
+        {inventory.map((inventory) => {
          return (
-      <Card style={{ width: '18rem' }}>
-         <Card.Img variant="top" src={inventory.Car.image} />
+           <div>
+             {inventory.Car.map((Car => {
+               return(
+                 <div>
+                   <Card style={{ width: '18rem' }}>
+         <Card.Img variant="top" src={Car.image} />
          <Card.Body>
-          <Card.Title>{inventory.Car.brand}</Card.Title>
-           <Card.Text>{inventory.Car.model} {inventory.Car.year}</Card.Text>
-           <Card.Text>Miles: {inventory.Car.Mileage}</Card.Text>
-           <Card.Text>{inventory.Car.Price}</Card.Text>
+          <Card.Title></Card.Title>
+           <Card.Text>{Car.model} {Car.year}</Card.Text>
+           <Card.Text>Miles: {Car.Mileage}</Card.Text>
+           <Card.Text>{Car.Price}</Card.Text>
          </Card.Body>
        </Card>
+                 </div>
+               )
+             }))}
+       </div>
         )})}
       </div>
-    )
+    );
 }
 
-export default Inventory
+export default Inventory;
