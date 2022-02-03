@@ -13,7 +13,7 @@ function Home() {
                     </p>
                     <button class="btn btn-secondary btn-md">Contact</button>
                 </div>
-                <img class="img-fluid w-60 d-none d-sm-block" src='https://www.zilliondesigns.com/images/portfolio/auto-dealer/auto-dealer-02.png'></img>
+                <img class="img-fluid w-60 d-none d-sm-block" alt="" src='https://www.zilliondesigns.com/images/portfolio/auto-dealer/auto-dealer-02.png'></img>
             </div>
         </div>
     </section>
